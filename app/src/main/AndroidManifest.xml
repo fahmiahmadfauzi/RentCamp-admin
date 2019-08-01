@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.if9.rentcampadmin">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_rentcamp_fix_v"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".RiwayatListActivity"
+            android:parentActivityName=".RiwayatActivity"></activity>
+        <activity
+            android:name=".RiwayatActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".TransaksiKonfirActivity" />
+        <activity
+            android:name=".TransaksiListActivity"
+            android:parentActivityName=".TransaksiActivity" />
+        <activity
+            android:name=".TransaksiActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".AlatTokoEditActivity"
+            android:parentActivityName=".AlatTokoListActivity" />
+        <activity
+            android:name=".AlatTokoDetailActivity"
+            android:parentActivityName=".AlatTokoListActivity" />
+        <activity
+            android:name=".TambahAlatActivity"
+            android:parentActivityName=".AlatTokoListActivity" />
+        <activity
+            android:name=".AlatTokoListActivity"
+            android:parentActivityName=".AlatTokoActivity" />
+        <activity
+            android:name=".AlatTokoActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".EditTempatActivity"
+            android:parentActivityName=".TokoActivity" />
+        <activity
+            android:name=".DetailTempatActivity"
+            android:parentActivityName=".TokoActivity" />
+        <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".TambahTokoActivity"
+            android:parentActivityName=".TokoActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="map" />
+        <activity
+            android:name=".TokoActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".EditPasswordActivity"
+            android:parentActivityName=".PengaturanActivity" />
+        <activity
+            android:name=".EditAkunActivity"
+            android:parentActivityName=".PengaturanActivity" />
+        <activity
+            android:name=".PengaturanActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

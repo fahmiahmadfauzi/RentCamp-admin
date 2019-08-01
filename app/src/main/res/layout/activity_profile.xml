@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D0753A">
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/toolbarprofile"
+        android:background="@drawable/headprof">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fotoprofile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_profile_24dp" />
+
+        <TextView
+            android:id="@+id/namauser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fotoprofile"
+            android:gravity="center"
+            android:text="nama user"
+            android:textColor="#fff"
+            android:textSize="25dp" />
+
+        <View
+            android:id="@+id/garis"
+            android:layout_width="200dp"
+            android:layout_height="1px"
+            android:layout_below="@id/namauser"
+            android:layout_centerHorizontal="true"
+            android:background="#fff">
+
+        </View>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/garis"
+            android:gravity="center"
+            android:text="nama user"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r1"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_email_black_24dp" />
+
+                <TextView
+                    android:id="@+id/t_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="user@email.com"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+            </TableRow>
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1px"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#000" />
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_place_black_24dp" />
+
+                <TextView
+                    android:id="@+id/t_alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="alamat user kota user"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+            </TableRow>
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1px"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#000" />
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_local_phone_black_24dp" />
+
+                <TextView
+                    android:id="@+id/t_telp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0990*******"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+            </TableRow>
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1px"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#000" />
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footerrrrr">
+
+    </RelativeLayout>
+
+</RelativeLayout>

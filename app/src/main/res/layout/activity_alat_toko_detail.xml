@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AlatTokoDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:elevation="2dp">
+
+    </android.support.v7.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fotoalat"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_profile_24dp"
+        app:civ_border_color="#DB582E"
+        app:civ_border_width="5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_label_black_24dp" />
+
+                <TextView
+                    android:id="@+id/t_namaAlat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nama alat"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+            </TableRow>
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1px"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#000" />
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_label_black_24dp" />
+
+                <TextView
+                    android:id="@+id/t_hargaAlat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Harga alat"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+            </TableRow>
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1px"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#000" />
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_label_black_24dp" />
+
+                <TextView
+                    android:id="@+id/t_stokAlat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stok"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+            </TableRow>
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1px"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#000" />
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnhapus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_coklat"
+            android:text="Hapus Alat"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_coklat"
+            android:text="Edit Alat"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</LinearLayout>

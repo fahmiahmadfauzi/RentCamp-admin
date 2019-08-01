@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/profile"
+            android:checked="false"
+            android:icon="@drawable/ic_profile_24dp"
+            android:title="Profile" />
+        <item
+            android:id="@+id/favorite"
+            android:checked="false"
+            android:icon="@drawable/ic_favorite_border_black_24dp"
+            android:title="Favorite" />
+
+        <item
+            android:id="@+id/seting"
+            android:checked="false"
+            android:icon="@drawable/ic_pengaturan_24dp"
+            android:title="Pengaturan" />
+        <item
+            android:id="@+id/tentang"
+            android:checked="false"
+            android:icon="@drawable/ic_note_black_24dp"
+            android:title="Tentang" />
+
+
+    </group>
+    <group android:id="@+id/aa">
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:icon="@drawable/ic_logout_24dp"
+            android:title="Keluar" />
+
+    </group>
+
+
+</menu>
